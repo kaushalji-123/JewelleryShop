@@ -1,0 +1,16 @@
+.social-media{
+    position: relative;
+    padding-left:1em ;
+    margin-top: 12em;
+    width: 10px;
+    gap: 1px;
+    &:hover{
+        cursor: pointer;
+    }
+    img{
+        margin-top: 24px;
+    }
+    @include x-small-screen{
+        display: none;
+    }
+}

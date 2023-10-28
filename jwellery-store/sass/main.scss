@@ -1,0 +1,26 @@
+@import "./utils/_mixins.scss";
+@import "./utils/_variables.scss";
+@import "./utils/_extensions.scss";
+
+@import "./base/_base.scss";
+@import "./base/_typography.scss";
+
+@import "./components/background";
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/display";
+@import "./components/row";
+
+@import "./layout/blog";
+@import "./layout/catalog";
+@import "./layout/collection";
+@import "./layout/copyright";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/join-us";
+@import "./layout/nav";
+@import "./layout/partenar";
+@import "./layout/social-media";
+@import "./layout/testimonials";
+
+ 

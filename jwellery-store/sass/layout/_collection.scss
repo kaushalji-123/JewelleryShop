@@ -1,0 +1,12 @@
+.collection{
+    .row{
+        margin: 3em auto;
+        .img{
+            margin: auto;
+            @include small-screen{
+                order: 1;
+                
+            }
+        }
+    }   
+}

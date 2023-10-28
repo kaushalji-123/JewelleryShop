@@ -1,0 +1,166 @@
+.catalog{
+    margin: 5em auto;
+    .row{
+    margin: 5em 0;
+    }
+    .img{
+        margin: auto;
+        img{
+            width: 100%;
+        }
+        @include small-screen{
+            order: 1;
+        }
+    }
+    .content{
+        @include small-screen{
+            order: 2;
+        }
+        h2{
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 69px;
+            letter-spacing: 0.05em;
+            @include medium-screen{
+                font-size:40px;
+            }
+            @include x-small-screen{
+                font-size:32px;
+            }
+        }
+        p{
+            font-size: 14px;
+            font-style: italic;
+            line-height: 21px;
+            margin-bottom: 50px;
+        }
+        .size{
+            p{
+                font-size: 26px;
+                font-style: italic;
+                line-height: 31px;
+                letter-spacing: 0.06px;
+                margin: 0 0 10px;
+            }
+            span{
+                cursor:pointer;
+                font-size: 18px;
+                line-height: 20px;
+                margin-right:30px;
+            }
+        }
+        .buy-btn{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:space-between;
+            padding-top: 20px;
+            button{
+                background-color: $bg-card;
+            }
+            button:hover{
+                cursor: pointer;
+                color: antiquewhite;
+                background-color: $bg-card-hover ;
+            }
+            @include x-small-screen{
+                padding-left: 10px;
+            }
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                position: relative;
+                padding: 0 20px;
+                font-size: 18px;
+                text-transform: uppercase;
+                border: 0;
+                box-shadow: $bg-card(210deg 87% 36%) 0px 7px 0px 0px;
+                background-color:$bg-card(210deg 100% 44%);
+                border-radius: 12px;
+                overflow: hidden;
+                transition: 31ms cubic-bezier(.5, .7, .4, 1);
+               }
+               
+               button:before {
+                content: attr(alt);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                inset: 0;
+                font-size: 15px;
+                font-weight: bold;
+                color: $bg-card-hover;
+                letter-spacing: 4px;
+                opacity: 1;
+               }
+               
+               button:active {
+                box-shadow: none;
+                transform: translateY(7px);
+                transition: 35ms cubic-bezier(.5, .7, .4, 1);
+               }
+               
+               button:hover:before {
+                transition: all .0s;
+                transform: translateY(100%);
+                opacity: 0;
+               }
+               
+               button i {
+                color: white;
+                font-size: 15px;
+                font-weight: bold;
+                letter-spacing: 4px;
+                font-style: normal;
+                transition: all 2s ease;
+                transform: translateY(-20px);
+                opacity: 0;
+               }
+               
+               button:hover i {
+                transition: all .2s ease;
+                transform: translateY(0px);
+                opacity: 1;
+               }
+               
+               button:hover i:nth-child(1) {
+                transition-delay: 0.045s;
+               }
+               
+               button:hover i:nth-child(2) {
+                transition-delay: calc(0.045s * 3);
+               }
+               
+               button:hover i:nth-child(3) {
+                transition-delay: calc(0.045s * 4);
+               }
+               
+               button:hover i:nth-child(4) {
+                transition-delay: calc(0.045s * 5);
+               }
+               
+               button:hover i:nth-child(6) {
+                transition-delay: calc(0.045s * 6);
+               }
+               
+               button:hover i:nth-child(7) {
+                transition-delay: calc(0.045s * 7);
+               }
+               
+               button:hover i:nth-child(8) {
+                transition-delay: calc(0.045s * 8);
+               }
+               
+               button:hover i:nth-child(9) {
+                transition-delay: calc(0.045s * 9);
+               }
+               
+               button:hover i:nth-child(10) {
+                transition-delay: calc(0.045s * 10);
+               }
+        }
+    }
+}

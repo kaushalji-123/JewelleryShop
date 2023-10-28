@@ -1,0 +1,8 @@
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    @include small-screen{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,20 @@
+.container{
+    position: relative;
+    margin:auto;
+
+    @include x-large{
+        width: 1140px;
+    }
+    @include big-screen{
+        width:990px;
+    }
+    @include medium-screen{
+        width: 720px;
+    }
+    @include small-screen{
+        width: 560px;
+    }
+    @include x-small-screen{
+        width: 85%;
+    } 
+}

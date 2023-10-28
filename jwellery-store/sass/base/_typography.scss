@@ -1,0 +1,23 @@
+ul{
+  display: flex;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-family: $text-font;
+    font-size: 14px;
+    font-weight: 17px;
+}
+p span button {
+    font-family: $text-font;
+    font-size: 20px;
+    font-weight: 400px
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $h-font;
+}
+.button{
+    cursor: pointer;
+}
