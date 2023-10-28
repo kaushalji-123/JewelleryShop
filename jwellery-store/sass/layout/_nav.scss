@@ -8,6 +8,22 @@ nav{
     height: 40px;
     margin-bottom: 20px;
     border-radius: 6px;
+   .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    height: 30px;
+    font-weight: bolder;
+    a{
+        color:rgb(190, 181, 88);
+        font-size: 20px;
+        font-family:Rocher;
+        base-palette: 6;
+    }
+    
+   }
 
 .menu{
     @include medium-screen{

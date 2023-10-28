@@ -1,0 +1,40 @@
+.join-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7em auto;
+    h2{
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 72px;
+        margin-bottom: 60px;
+        text-align: center;
+        @include small-screen{
+            font-size: 40px;
+        }
+    }
+    form{
+        display: flex;
+        @include small-screen{
+            flex-direction: column;
+            width: 100%;
+        }
+        input{
+            font-size: 18px;
+            line-height: 21px;
+            padding: 25 px 20px;
+            width: 500px;
+            border: none;
+            text-align: center ;
+            @include small-screen{
+                width: 90%;
+                margin: 2 em auto;
+            }
+        }
+        button{
+            padding:25px 20px;
+            width:-webkit-fit-content;
+            background-color: $bg-card;
+        }
+    }
+}
