@@ -1,2 +1,2 @@
 # JewelleryShop
-Creating a Demo jewellery shop static Website with Sass
+Creating a Demo jewellery shop static Website 
