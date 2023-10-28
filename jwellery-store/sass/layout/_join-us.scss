@@ -16,12 +16,15 @@
     form{
         display: flex;
         @include small-screen{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
             width: 100%;
         }
         input{
             font-size: 18px;
-            line-height: 21px;
+            line-height: 51px;
             padding: 25 px 20px;
             width: 500px;
             border: none;
@@ -34,7 +37,20 @@
         button{
             padding:25px 20px;
             width:-webkit-fit-content;
-            background-color: $bg-card;
+            background-color: rgb(110, 133, 88);
+            cursor: pointer;
+            @include small-screen{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              
+                height: 30px;
+                width: 100px;
+            }
+            &:hover{
+                background-color: rgb(82, 89, 54);
+                color: rgb(219, 210, 210);
+            }
         }
     }
 }

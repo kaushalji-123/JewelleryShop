@@ -1,0 +1,32 @@
+footer{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    justify-content: space-between;
+    margin: 4em 0;
+    @include medium-screen{
+        grid-template-columns: repeat(2, 1fr)
+    }
+    @include small-screen{
+        grid-template-columns: 1fr;
+    }
+}
+.col{
+    
+    position: relative;
+    ul{
+        display: flex;
+        flex-direction: column; 
+        li{
+            a{
+                color: $nav;
+                &:hover{
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+    p{
+        font-size: 17px;
+        margin: 10px auto;
+    }
+ }
